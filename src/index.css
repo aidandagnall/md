@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@keyframes typing {
+          0.0000% { content: ""; }
+          1.1395% { content: "#"; }
+          2.2791% { content: "# "; }
+          3.4186% { content: "# H"; }
+          4.5581% { content: "# Hi"; }
+          5.6977% { content: "# Hi,"; }
+          6.8372% { content: "# Hi, "; }
+          7.9767% { content: "# Hi, I"; }
+          9.1163% { content: "# Hi, I'"; }
+          10.2558% { content: "# Hi, I'm"; }
+          11.395% { content: "# Hi, I'm "; }
+          12.5345% { content: "# Hi, I'm A"; }
+          13.674% { content: "# Hi, I'm Ai"; }
+          14.8135% { content: "# Hi, I'm Ai"; }
+          15.953%, 25.5%{ content: "# Hi, I'm Aid"; }
+          17.0925%, 24% { content: "# Hi, I'm Aide"; }
+          18.332%, 23.5% { content: "# Hi, I'm Aiden"; }
+          27.6506% { content: "# Hi, I'm Aida"; }
+          28.79% { content: "# Hi, I'm Aidan"; }
+          100% { content: "# Hi, I'm Aidan"; }
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+.typewriter::before {
+  content: "";
+  animation: typing 13.5s;
+}
+
+.typewriter {
+  --caret: currentcolor;
+}
+
+.typewriter::after {
+  content: "";
+  border-right: 1px solid var(--caret);
+  animation: blink 0.5s linear 35;
+}
+
+.typewriter.thick::after {
+  border-right: 1ch solid var(--caret);
+}
+
+.typewriter.nocaret::after {
+  border-right: 0;
+}
+
+
+@media (prefers-reduced-motion) {
+  .typewriter::after {
+    animation: none;
+  }
+}
