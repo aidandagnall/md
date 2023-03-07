@@ -36,16 +36,26 @@ code {
           18.332%, 23.5% { content: "# Hi, I'm Aiden"; }
           27.6506% { content: "# Hi, I'm Aida"; }
           28.79% { content: "# Hi, I'm Aidan"; }
-          100% { content: "# Hi, I'm Aidan"; }
+
+          29.90% { content: "# Hi, I'm Aidan "; }
+          30.95% { content: "# Hi, I'm Aidan :"; }
+          32.01% { content: "# Hi, I'm Aidan :w"; }
+          33.13% { content: "# Hi, I'm Aidan :wa"; }
+          34.24% { content: "# Hi, I'm Aidan :wav"; }
+          35.35% { content: "# Hi, I'm Aidan :wave"; }
+          36.47% { content: "# Hi, I'm Aidan :wave:"; }
+          37.60% { content: "# Hi, I'm Aidan 👋"; }
+          100% { content: "# Hi, I'm Aidan 👋"; }
 }
 
 @keyframes blink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0; }
+  0%, 100% { opacity: 0; }
+  50% { opacity: 1; }
 }
 .typewriter::before {
   content: "";
-  animation: typing 13.5s;
+  animation: typing 13.5s linear 2s;
+  animation-fill-mode: forwards;
 }
 
 .typewriter {
@@ -55,7 +65,8 @@ code {
 .typewriter::after {
   content: "";
   border-right: 1px solid var(--caret);
-  animation: blink 0.5s linear 35;
+  animation: blink 0.5s linear 24;
+  animation-fill-mode: forwards;
 }
 
 .typewriter.thick::after {
@@ -66,6 +77,40 @@ code {
   border-right: 0;
 }
 
+h1 {
+  font-weight: 600;
+}
+
+h2::before {
+  content: "## "
+}
+
+/* FROM TAILWIND */
+h2 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 600;
+}
+
+h3::before {
+  content: "### "
+}
+
+h3 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 500;
+}
+
+h4::before {
+  content: "#### "
+}
+
+h4 {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 500;
+}
 
 @media (prefers-reduced-motion) {
   .typewriter::after {

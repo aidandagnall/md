@@ -1,13 +1,38 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import Home from './routes/Home';
+import Advent from './routes/Advent';
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
 import reportWebVitals from './reportWebVitals';
+import LabMonitor from './routes/LabMonitor';
+
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <Home/>
+  },
+  {
+    path: 'advent',
+    element: <Advent/>
+  },
+  {
+    path: 'lab-monitor',
+    element: <LabMonitor/>
+  }
+])
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <div className="App font-mono flex bg-slate-100 dark:bg-zinc-800 h-max text-gray-800 dark:text-white">
+      <div className="lg:w-1/2 w-5/6 mt-24 mx-auto">
+        <RouterProvider router={router}/>
+      </div>
+    </div>
   </React.StrictMode>
 );
 
