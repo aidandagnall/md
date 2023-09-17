@@ -4,13 +4,13 @@ import './index.css';
 import Home from './routes/Home';
 import Advent from './routes/Advent';
 import {
-  createBrowserRouter,
+  createHashRouter,
   RouterProvider,
 } from "react-router-dom";
 import reportWebVitals from './reportWebVitals';
 import LabMonitor from './routes/LabMonitor';
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: '/',
     element: <Home/>

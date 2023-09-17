@@ -15,7 +15,7 @@ function Home() {
 
           <br/>
           <p className='text-left'>
-            I'm a <span className="font-bold">**Computer Science**</span> student at the University of Nottingham.
+            I'm a <span className='font-bold'>**Graduate Software Engineer**</span> at [[<a href="https://wise.com" className="text-blue-600 dark:text-blue-400">Wise</a>]].
           </p>
 
           <br/>
