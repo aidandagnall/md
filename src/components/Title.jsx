@@ -1,4 +1,4 @@
-import TypedHeader from './Typed'
+import { TypedHeader } from './Typed'
 function Header(props) {
     return (
         <pre>

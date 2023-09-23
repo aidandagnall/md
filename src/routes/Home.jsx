@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom";
 import Header from "../components/Title";
+import LinkComponent from "../components/Link";
 import 'animate.css'
 
 function Home() {
@@ -15,7 +15,7 @@ function Home() {
 
           <br/>
           <p className='text-left'>
-            I'm a <span className='font-bold'>**Graduate Software Engineer**</span> at [[<a href="https://wise.com" className="text-blue-600 dark:text-blue-400">Wise</a>]].
+            I'm a <span className='font-bold'>**Graduate Software Engineer**</span> at <LinkComponent to="https://wise.com" name="Wise"/>
           </p>
 
           <br/>
@@ -24,10 +24,10 @@ function Home() {
             Some projects I've worked on:
           </p>
           <p className='text-left ml-4'>
-            - [[<Link to="/lab-monitor" className="text-blue-600 dark:text-blue-400">Lab Monitor</Link>]]
+            - <LinkComponent to="/lab-monitor" name="Lab Monitor" />
           </p>
           <p className='text-left ml-4'>
-            - [[<Link to="/advent" className="text-blue-600 dark:text-blue-400">Advent of Code</Link>]]
+            - <LinkComponent to="/advent" name="Advent of Code" />
           </p>
 
           <br/>
