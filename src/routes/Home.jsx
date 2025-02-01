@@ -11,11 +11,11 @@ function Home() {
             "# Hi, I'm Aidan 👋"
           ]} className="text-slate-900 dark:text-white"/>
 
-          <div className="animate__animated animate__fadeInUp animate__delay-3s">
+          <div className="animate__animated animate__fadeInUp animate__delay-1s">
 
           <br/>
           <p className='text-left'>
-            I'm a <span className='font-bold'>**Graduate Software Engineer**</span> at <LinkComponent to="https://wise.com" name="Wise"/>
+            I'm a <span className='font-bold'>**Software Engineer**</span> at <LinkComponent to="https://wise.com" name="Wise"/>
           </p>
 
           <br/>
