@@ -29,6 +29,9 @@ function Home() {
         <p className='text-left ml-4'>
           - <LinkComponent to="/advent" name="Advent of Code" />
         </p>
+        <p className='text-left ml-4'>
+          - <LinkComponent to="/qr" name="QR scanning" />
+        </p>
 
         <br />
         <p className="text-left">
